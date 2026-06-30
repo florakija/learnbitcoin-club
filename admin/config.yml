@@ -3,7 +3,7 @@ backend:
   repo: florakija/learnbitcoin-club
   branch: main
   auth_type: pkce
-  app_id: "" # GitHub OAuth App Client ID — wird gleich eingetragen
+  app_id: "Ov23liNmY7K0F7QspAVo"
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
