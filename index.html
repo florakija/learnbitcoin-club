@@ -68,7 +68,6 @@ layout: default
         <!-- WATCH -->
         <div class="tab-panel active" id="tab-watch">
           <div class="resource-grid">
-            {% for i in (1..4) %}
             <a href="#" class="res-video-card">
               <div class="res-video-thumb">
                 <span class="res-play-btn">&#9654;</span>
@@ -79,14 +78,22 @@ layout: default
                 <div class="res-video-source">Video &middot; coming soon</div>
               </div>
             </a>
-            {% endfor %}
+            <a href="#" class="res-video-card">
+              <div class="res-video-thumb">
+                <span class="res-play-btn">&#9654;</span>
+                <span class="res-video-duration">soon</span>
+              </div>
+              <div class="res-video-info">
+                <div class="res-video-title">Coming soon</div>
+                <div class="res-video-source">Video &middot; coming soon</div>
+              </div>
+            </a>
           </div>
         </div>
 
         <!-- READ -->
         <div class="tab-panel" id="tab-read">
           <div class="resource-grid">
-            {% for i in (1..4) %}
             <div class="res-book-card">
               <div class="res-book-cover"><span>COVER</span></div>
               <div class="res-book-info">
@@ -96,28 +103,39 @@ layout: default
                 <span class="res-coming-soon">Coming soon</span>
               </div>
             </div>
-            {% endfor %}
+            <div class="res-book-card">
+              <div class="res-book-cover"><span>COVER</span></div>
+              <div class="res-book-info">
+                <div class="res-book-title">Coming soon</div>
+                <div class="res-book-author">A recommended read</div>
+                <div class="res-book-why">Still picking the best beginner books for this spot. Check back soon.</div>
+                <span class="res-coming-soon">Coming soon</span>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- LISTEN -->
         <div class="tab-panel" id="tab-listen">
-          <div class="resource-grid-3">
-            {% for i in (1..3) %}
+          <div class="resource-grid">
             <div class="res-podcast-card">
               <div class="res-podcast-art"><span class="res-podcast-icon">&#9834;</span></div>
               <div class="res-podcast-title">Coming soon</div>
               <div class="res-podcast-host">A show worth a listen</div>
               <span class="res-coming-soon">Coming soon</span>
             </div>
-            {% endfor %}
+            <div class="res-podcast-card">
+              <div class="res-podcast-art"><span class="res-podcast-icon">&#9834;</span></div>
+              <div class="res-podcast-title">Coming soon</div>
+              <div class="res-podcast-host">A show worth a listen</div>
+              <span class="res-coming-soon">Coming soon</span>
+            </div>
           </div>
         </div>
 
         <!-- EXPLORE -->
         <div class="tab-panel" id="tab-explore">
           <div class="link-list">
-            {% for i in (1..4) %}
             <a href="#" class="res-link-card">
               <div class="res-link-info">
                 <div class="res-link-header">
@@ -128,7 +146,16 @@ layout: default
               </div>
               <span class="res-link-arrow">&nearr;</span>
             </a>
-            {% endfor %}
+            <a href="#" class="res-link-card">
+              <div class="res-link-info">
+                <div class="res-link-header">
+                  <span class="res-link-title">Coming soon</span>
+                  <span class="res-link-url">coming soon</span>
+                </div>
+                <div class="res-link-desc">A handy resource will live here soon.</div>
+              </div>
+              <span class="res-link-arrow">&nearr;</span>
+            </a>
           </div>
         </div>
 
