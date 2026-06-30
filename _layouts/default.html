@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }} — Bitcoin, the peaceful revolution.{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+  {% seo %}
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="{{ '/' | relative_url }}" class="nav-logo">
+        <span class="nav-logo-icon">&#8383;</span>
+        <span class="nav-logo-text">learnbitcoin<span class="muted">.club</span></span>
+      </a>
+      <button class="nav-hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="{{ '/' | relative_url }}#path">The Path</a>
+        <a href="{{ '/' | relative_url }}#blog">Blog</a>
+        <a href="{{ '/' | relative_url }}#about">About</a>
+        <a href="{{ '/' | relative_url }}#glossary">Glossary</a>
+        <span class="nav-badge">&#9679; BEGINNER&nbsp;FRIENDLY</span>
+      </div>
+    </div>
+  </nav>
+
+  {{ content }}
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="footer-logo-icon">&#8383;</span>
+        <span class="footer-logo-text">learnbitcoin<span class="muted">.club</span></span>
+      </div>
+      <div class="footer-links">
+        <a href="{{ '/' | relative_url }}#path">The Path</a>
+        <a href="{{ '/' | relative_url }}#blog">Blog</a>
+        <a href="{{ '/' | relative_url }}#about">About</a>
+        <a href="{{ '/' | relative_url }}#glossary">Glossary</a>
+      </div>
+      <div class="footer-note">Education, not financial advice &middot; <span id="footer-year"></span></div>
+    </div>
+  </footer>
+
+  <script src="{{ '/main.js' | relative_url }}"></script>
+</body>
+</html>

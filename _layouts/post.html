@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<article class="post-article">
+  <div class="container" style="max-width: 780px; padding-top: 60px; padding-bottom: 80px;">
+    <a href="{{ '/' | relative_url }}#blog" class="post-back">&larr; Back</a>
+    <div class="post-header">
+      <div class="blog-card-meta">
+        <span class="blog-type-badge {{ page.type | default: 'article' }}">{{ page.type | default: "article" | upcase }}</span>
+        <span class="blog-card-date">{{ page.date | date: "%B %d, %Y" }}</span>
+      </div>
+      <h1 class="post-title">{{ page.title }}</h1>
+      {% if page.excerpt %}
+      <p class="post-excerpt">{{ page.excerpt }}</p>
+      {% endif %}
+    </div>
+
+    {% if page.youtube_id %}
+    <div class="post-video">
+      <iframe src="https://www.youtube-nocookie.com/embed/{{ page.youtube_id }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    {% endif %}
+
+    {% if page.image %}
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="post-hero-image">
+    {% endif %}
+
+    <div class="post-content">
+      {{ content }}
+    </div>
+  </div>
+</article>

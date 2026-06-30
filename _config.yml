@@ -1,0 +1,9 @@
+title: learnbitcoin.club
+description: "Bitcoin education from zero to confident self-custody. No hype, no shilling, no jargon."
+url: "https://learnbitcoin.club"
+baseurl: ""
+permalink: /blog/:title/
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
