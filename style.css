@@ -239,18 +239,17 @@ img { max-width: 100%; display: block; }
   justify-content: center;
 }
 .play-btn {
-  width: 64px;
-  height: 64px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
-  background: #FF0033;
-  color: #fff;
+  background: rgba(28, 26, 23, 0.15);
+  color: rgba(28, 26, 23, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  font-size: 22px;
   padding-left: 4px;
-  box-shadow: 0 8px 24px rgba(255, 0, 51, 0.4);
-  animation: floaty 4.5s ease-in-out infinite;
+  box-shadow: none;
 }
 .video-badge {
   position: absolute;
@@ -491,15 +490,15 @@ img { max-width: 100%; display: block; }
   justify-content: center;
 }
 .res-play-btn {
-  width: 52px;
-  height: 52px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  background: #FF0033;
-  color: #fff;
+  background: rgba(28, 26, 23, 0.15);
+  color: rgba(28, 26, 23, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
+  font-size: 18px;
   padding-left: 3px;
 }
 .res-video-duration {
@@ -1093,6 +1092,7 @@ img { max-width: 100%; display: block; }
 }
 
 @media (max-width: 680px) {
+  .container { padding-left: 28px; padding-right: 28px; }
   .nav-links { display: none; }
   .nav-links.open {
     display: flex;
@@ -1124,4 +1124,7 @@ img { max-width: 100%; display: block; }
   .blog-card-body { padding: 14px 4px; }
   .footer-inner { flex-direction: column; text-align: center; }
   .footer-links { flex-wrap: wrap; justify-content: center; }
+  .play-btn { width: 52px; height: 52px; font-size: 20px; }
+  .glossary-section { padding-left: 28px; padding-right: 28px; }
+  .about-inner { padding-left: 28px; padding-right: 28px; }
 }
