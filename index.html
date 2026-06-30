@@ -269,17 +269,77 @@ layout: default
     <p class="section-desc">Hit a term you don't know? Tap to expand. No question is too basic here.</p>
   </div>
   <div class="glossary-list">
-    {% assign terms = "Blockchain|A shared notebook that records every Bitcoin payment ever made. Thousands of computers keep their own copy, so nobody can fake it or quietly change it.,Private key|A secret password that controls your Bitcoin. Anyone who has it can spend your coins, so you keep it private and never share it.,Wallet|An app on your phone, or a small device, that holds your keys and lets you send and receive Bitcoin. Think of it as a keychain for your money.,Satoshi (sat)|The smallest piece of a Bitcoin, like a cent is to a euro. One Bitcoin is 100 million sats, so you never have to buy a whole one.,Halving|Every four years or so, new Bitcoin is created at half the old speed. This is why there will only ever be 21 million, which keeps it rare.,Node|A computer that checks Bitcoin payments follow the rules. Running your own means you check for yourself instead of trusting anyone else.,Cold storage|Keeping your keys completely offline, like cash in a safe instead of your pocket. Hackers cannot reach what is not connected to the internet.,Self-custody|Holding your own Bitcoin yourself instead of leaving it on an app or exchange. If you hold the keys, the coins are truly yours.,HODL|Slang for holding your Bitcoin through the ups and downs instead of panic selling. It started as a typo of the word hold." | split: "," %}
-    {% for entry in terms %}
-    {% assign parts = entry | split: "|" %}
     <div class="glossary-item">
       <div class="glossary-item-header">
-        <span class="glossary-num">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</span>
-        <span class="glossary-term">{{ parts[0] }}</span>
+        <span class="glossary-num">01</span>
+        <span class="glossary-term">Blockchain</span>
         <span class="glossary-icon">+</span>
       </div>
-      <div class="glossary-def">{{ parts[1] }}</div>
+      <div class="glossary-def">A shared notebook that records every Bitcoin payment ever made. Thousands of computers keep their own copy, so nobody can fake it or quietly change it.</div>
     </div>
-    {% endfor %}
+    <div class="glossary-item">
+      <div class="glossary-item-header">
+        <span class="glossary-num">02</span>
+        <span class="glossary-term">Private key</span>
+        <span class="glossary-icon">+</span>
+      </div>
+      <div class="glossary-def">A secret password that controls your Bitcoin. Anyone who has it can spend your coins, so you keep it private and never share it.</div>
+    </div>
+    <div class="glossary-item">
+      <div class="glossary-item-header">
+        <span class="glossary-num">03</span>
+        <span class="glossary-term">Wallet</span>
+        <span class="glossary-icon">+</span>
+      </div>
+      <div class="glossary-def">An app on your phone, or a small device, that holds your keys and lets you send and receive Bitcoin. Think of it as a keychain for your money.</div>
+    </div>
+    <div class="glossary-item">
+      <div class="glossary-item-header">
+        <span class="glossary-num">04</span>
+        <span class="glossary-term">Satoshi (sat)</span>
+        <span class="glossary-icon">+</span>
+      </div>
+      <div class="glossary-def">The smallest piece of a Bitcoin, like a cent is to a euro. One Bitcoin is 100 million sats, so you never have to buy a whole one.</div>
+    </div>
+    <div class="glossary-item">
+      <div class="glossary-item-header">
+        <span class="glossary-num">05</span>
+        <span class="glossary-term">Halving</span>
+        <span class="glossary-icon">+</span>
+      </div>
+      <div class="glossary-def">Every four years or so, new Bitcoin is created at half the old speed. This is why there will only ever be 21 million, which keeps it rare.</div>
+    </div>
+    <div class="glossary-item">
+      <div class="glossary-item-header">
+        <span class="glossary-num">06</span>
+        <span class="glossary-term">Node</span>
+        <span class="glossary-icon">+</span>
+      </div>
+      <div class="glossary-def">A computer that checks Bitcoin payments follow the rules. Running your own means you check for yourself instead of trusting anyone else.</div>
+    </div>
+    <div class="glossary-item">
+      <div class="glossary-item-header">
+        <span class="glossary-num">07</span>
+        <span class="glossary-term">Cold storage</span>
+        <span class="glossary-icon">+</span>
+      </div>
+      <div class="glossary-def">Keeping your keys completely offline, like cash in a safe instead of your pocket. Hackers cannot reach what is not connected to the internet.</div>
+    </div>
+    <div class="glossary-item">
+      <div class="glossary-item-header">
+        <span class="glossary-num">08</span>
+        <span class="glossary-term">Self-custody</span>
+        <span class="glossary-icon">+</span>
+      </div>
+      <div class="glossary-def">Holding your own Bitcoin yourself instead of leaving it on an app or exchange. If you hold the keys, the coins are truly yours.</div>
+    </div>
+    <div class="glossary-item">
+      <div class="glossary-item-header">
+        <span class="glossary-num">09</span>
+        <span class="glossary-term">HODL</span>
+        <span class="glossary-icon">+</span>
+      </div>
+      <div class="glossary-def">Slang for holding your Bitcoin through the ups and downs instead of panic selling. It started as a typo of the word hold.</div>
+    </div>
   </div>
 </section>
