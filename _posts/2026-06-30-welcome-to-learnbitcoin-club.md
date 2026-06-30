@@ -8,14 +8,14 @@ excerpt: "Why I built this site and what you can expect here."
 
 ## Hey, glad you're here.
 
-I built this site because I believe everyone deserves to understand Bitcoin — no hype, no jargon, no one trying to sell you anything.
+I built this site because I believe everyone deserves to understand Bitcoin. No hype, no jargon, no one trying to sell you anything.
 
 ### What you'll find here
 
-- **Curated videos** — the best explanations I know, in the right order
-- **Articles & guides** — written by me, always beginner-friendly
-- **A glossary** — Bitcoin terms in plain English
-- **All free** — forever
+- **Curated videos** that walk you through the basics in the right order
+- **Articles and guides** written by me, always beginner-friendly
+- **A glossary** with Bitcoin terms explained in plain English
+- **Everything is free** and always will be
 
 ### Who is this for?
 
