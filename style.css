@@ -1092,7 +1092,7 @@ img { max-width: 100%; display: block; }
 }
 
 @media (max-width: 680px) {
-  .container { padding-left: 28px; padding-right: 28px; }
+  .container { padding-left: 32px; padding-right: 32px; }
   .nav-links { display: none; }
   .nav-links.open {
     display: flex;
@@ -1115,16 +1115,33 @@ img { max-width: 100%; display: block; }
   .path-header h2, .blog-header h2 { font-size: 32px; }
   .about-text h2 { font-size: 30px; }
   .glossary-header h2 { font-size: 30px; }
-  .level-header { padding: 20px 18px; gap: 14px; }
+  .level-header {
+    flex-wrap: wrap;
+    padding: 20px 18px;
+    gap: 10px;
+  }
+  .level-info {
+    flex: 1 0 calc(100% - 68px);
+  }
+  .level-desc {
+    margin-top: 6px;
+  }
+  .level-status {
+    font-size: 11px;
+    padding: 6px 10px;
+    margin-left: 58px;
+  }
+  .level-toggle {
+    margin-left: auto;
+  }
   .level-number { width: 48px; height: 48px; font-size: 22px; }
   .level-content { padding: 20px 18px 26px; }
-  .level-status { font-size: 11px; padding: 6px 10px; }
   .blog-card { flex-direction: column; gap: 0; }
   .blog-card-thumb { width: 100%; }
   .blog-card-body { padding: 14px 4px; }
   .footer-inner { flex-direction: column; text-align: center; }
   .footer-links { flex-wrap: wrap; justify-content: center; }
   .play-btn { width: 52px; height: 52px; font-size: 20px; }
-  .glossary-section { padding-left: 28px; padding-right: 28px; }
-  .about-inner { padding-left: 28px; padding-right: 28px; }
+  .glossary-section { padding-left: 32px; padding-right: 32px; }
+  .about-inner { padding-left: 32px; padding-right: 32px; }
 }
