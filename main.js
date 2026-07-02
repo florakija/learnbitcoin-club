@@ -57,6 +57,41 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // ===== CONTRIBUTE FORM =====
+  const form = document.getElementById('contribute-form');
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = document.getElementById('contribute-btn');
+      const status = document.getElementById('form-status');
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+      status.textContent = '';
+      status.className = 'form-status';
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: new FormData(form)
+        });
+        const data = await res.json();
+        if (data.success) {
+          status.textContent = 'Sent! Thanks for contributing.';
+          status.className = 'form-status success';
+          form.reset();
+        } else {
+          status.textContent = 'Something went wrong. Try again?';
+          status.className = 'form-status error';
+        }
+      } catch {
+        status.textContent = 'Something went wrong. Try again?';
+        status.className = 'form-status error';
+      }
+      btn.disabled = false;
+      btn.innerHTML = 'Send it &rarr;';
+    });
+  }
+
   // ===== FOOTER YEAR =====
   const yearEl = document.getElementById('footer-year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();

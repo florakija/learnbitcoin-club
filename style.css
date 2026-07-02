@@ -918,6 +918,87 @@ img { max-width: 100%; display: block; }
 }
 .glossary-item.open .glossary-def { display: block; }
 
+/* ===== CONTRIBUTE ===== */
+.contribute-section {
+  background: #F5EEE2;
+  scroll-margin-top: 80px;
+}
+.contribute-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 84px 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+.contribute-text .section-title { font-size: 40px; line-height: 1.1; }
+.contribute-desc {
+  font-size: 18px;
+  color: #5A524A;
+  line-height: 1.65;
+  margin: 0 0 18px;
+  max-width: 480px;
+}
+.contribute-note {
+  font-size: 15px;
+  color: #79706A;
+  line-height: 1.55;
+  margin: 0;
+}
+.contribute-form-wrap {
+  background: #fff;
+  border: 1px solid #ECE4D9;
+  border-radius: 22px;
+  padding: 32px;
+  box-shadow: 0 14px 36px -22px rgba(28, 26, 23, 0.15);
+}
+.form-group { margin-bottom: 20px; }
+.form-label {
+  display: block;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #1C1A17;
+}
+.form-optional {
+  font-weight: 400;
+  color: #B7AC9C;
+  font-size: 13px;
+}
+.form-input, .form-textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #E0D6C7;
+  border-radius: 12px;
+  background: #FFFCF8;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 16px;
+  color: #1C1A17;
+  transition: border-color 0.15s;
+}
+.form-input:focus, .form-textarea:focus {
+  outline: none;
+  border-color: #F7931A;
+}
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+.contribute-submit {
+  width: 100%;
+  justify-content: center;
+}
+.form-status {
+  text-align: center;
+  margin-top: 14px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.form-status.success { color: #2D8F4E; }
+.form-status.error { color: #C93030; }
+
 /* ===== FOOTER ===== */
 .footer {
   border-top: 1px solid #ECE4D9;
@@ -1086,6 +1167,10 @@ img { max-width: 100%; display: block; }
     gap: 40px;
     padding: 60px 24px;
   }
+  .contribute-inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
   .about-photo-wrap { max-width: 320px; }
   .resource-grid, .resource-grid-3 {
     grid-template-columns: 1fr;
@@ -1145,4 +1230,6 @@ img { max-width: 100%; display: block; }
   .play-btn { width: 52px; height: 52px; font-size: 20px; }
   .glossary-section { padding-left: 32px; padding-right: 32px; }
   .about-inner { padding-left: 32px; padding-right: 32px; }
+  .contribute-inner { padding-left: 32px; padding-right: 32px; }
+  .contribute-form-wrap { padding: 24px; }
 }

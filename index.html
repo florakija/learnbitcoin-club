@@ -401,3 +401,33 @@ layout: default
     </div>
   </div>
 </section>
+
+<!-- ===== CONTRIBUTE ===== -->
+<section id="contribute" class="contribute-section">
+  <div class="contribute-inner">
+    <div class="contribute-text">
+      <div class="section-label">Contribute</div>
+      <h2 class="section-title">This site runs on feedback.</h2>
+      <p class="contribute-desc">Bitcoin works because everyone participates. This site is no different. If something confused you, if a video helped, if you want a topic covered, just tell me. There are no dumb questions. Every single message helps make this place a little better for the next person who starts at zero.</p>
+      <p class="contribute-note">Your email is optional. Leave it if you want a reply, skip it if you prefer to stay anonymous.</p>
+    </div>
+    <div class="contribute-form-wrap">
+      <form action="https://api.web3forms.com/submit" method="POST" class="contribute-form" id="contribute-form">
+        <input type="hidden" name="access_key" value="2e306b61-f915-4398-b7cb-226d28d4e65b">
+        <input type="hidden" name="subject" value="New message from learnbitcoin.club">
+        <input type="hidden" name="from_name" value="learnbitcoin.club Visitor">
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+        <div class="form-group">
+          <label for="contribute-email" class="form-label">Email <span class="form-optional">(optional, if you want a reply)</span></label>
+          <input type="email" name="email" id="contribute-email" class="form-input" placeholder="you@example.com">
+        </div>
+        <div class="form-group">
+          <label for="contribute-message" class="form-label">Message</label>
+          <textarea name="message" id="contribute-message" class="form-textarea" placeholder="What's on your mind?" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary contribute-submit" id="contribute-btn">Send it &rarr;</button>
+        <div class="form-status" id="form-status"></div>
+      </form>
+    </div>
+  </div>
+</section>
